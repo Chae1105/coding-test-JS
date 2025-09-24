@@ -10,4 +10,12 @@ function solution(age) {
         result += obj[a];
     }
     return result;
+    
+    /*
+    return age
+    .toString()
+    .split("")
+    .map((v) => "abcdefghij"[v])
+    .join("");
+    */
 }
