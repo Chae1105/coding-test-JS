@@ -5,4 +5,9 @@ function solution(n) {
     }
     
     return answer;
+    
+    /*
+    var half = Math.floor(n/2);
+    return half*(half+1);
+    */
 }
