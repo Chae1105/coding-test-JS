@@ -1,7 +1,10 @@
 function solution(emergency) {
     const arr = [...emergency].sort((a, b) => b - a);
+    return emergency.map((a) => arr.indexOf(a) + 1);
+
+    /*
     let result = [];
-    
+
     for(let j = 0; j < emergency.length; j++) {
         for(let i = 0; i < arr.length; i++) {
             if(emergency[j] === arr[i]) { 
@@ -9,5 +12,7 @@ function solution(emergency) {
             }
         }
     }
+    
     return result;
+    */
 }
