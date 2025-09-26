@@ -11,4 +11,5 @@ function solution(letter) {
         result += morse[a];
     }
     return result;
+    // return letter.split(' ').reduce((prev, curr) => prev + morse[curr], '');
 }
