@@ -10,4 +10,15 @@ function solution(s) {
         }
     }
     return answer.map(n => Number(n)).reduce((sum, num) => sum += num, 0);
+    
+    /*
+    const stack = [];
+    
+    s.split(' ').forEach((x) => {
+        if(x === "Z") stack.pop();
+        else stack.push(+x);
+    })
+    
+    return stack.length ? stack.reduce((sum, num) => sum += num) : 0;
+    */
 }
