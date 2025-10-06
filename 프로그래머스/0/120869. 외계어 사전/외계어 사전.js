@@ -1,8 +1,5 @@
 function solution(spell, dic) {
-    // 일단, dic의 요소들을 각각 배열로 만들기
-    // spell과 길이가 같은 것들만 배열로!
-    // 그 뒤에, filter로 새 배열 만든 뒤에, spell과 같은지 비교하면 되지 않을까?
-    
+    /*
     let dicArr = [];
     
     for(let str of dic) {
@@ -21,4 +18,7 @@ function solution(spell, dic) {
     }
     
     return answer ? 1 : 2;
+    */
+    
+    return dic.some(str => spell.sort().toString() === [...str].sort().toString()) ? 1 : 2;
 }
