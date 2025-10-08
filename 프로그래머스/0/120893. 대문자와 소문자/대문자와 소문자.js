@@ -1,4 +1,5 @@
 function solution(my_string) {
+    /*
     let answer = my_string.split('');
     
     for(let i in answer) {
@@ -8,4 +9,9 @@ function solution(my_string) {
     }
     
     return answer.join('');
+    */
+    
+    // map 사용
+    let answer = my_string.split('');
+    return answer.map(s => s === s.toLowerCase() ? s.toUpperCase() : s.toLowerCase()).join('');
 }
