@@ -11,7 +11,13 @@ function solution(my_string) {
     return answer.join('');
     */
     
-    // map 사용
+    /* map 사용
     let answer = my_string.split('');
     return answer.map(s => s === s.toLowerCase() ? s.toUpperCase() : s.toLowerCase()).join('');
+    */
+    
+    // 배열로 변환 X
+    let answer = "";
+    for(let s of my_string) answer += s === s.toLowerCase() ? s.toUpperCase() : s.toLowerCase();
+    return answer;
 }
