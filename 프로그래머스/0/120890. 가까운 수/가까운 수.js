@@ -1,4 +1,5 @@
 function solution(array, n) {
+    /*
     let answer = Math.abs(array[0]-n);
     let idx = 0;
     
@@ -13,4 +14,9 @@ function solution(array, n) {
     }
     
     return array[idx];
+    */
+    
+    array.sort((a, b) => Math.abs(n - a) - Math.abs(n - b) || a - b);
+    
+    return array[0];
 }
