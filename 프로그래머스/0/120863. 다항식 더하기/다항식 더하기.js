@@ -3,7 +3,7 @@ function solution(polynomial) {
     
     let x = 0;
     let num = 0;
-    let answer = "";
+    let answer = [];
     
     for(let el of arr) {
         if(el.includes('x')) {
@@ -13,6 +13,7 @@ function solution(polynomial) {
         }
     }
     
+    /*
     if(x !== 0 && num !== 0) {
         if(x === 1) return `x + ${num}`;
         else return `${x}x + ${num}`;
@@ -22,4 +23,11 @@ function solution(polynomial) {
         if(x === 1) return `x`;
         else return `${x}x`;
     }
+    */
+    
+    if(x) answer.push(`${x === 1 ? '' : `${x}`}x`);
+    if(num) answer.push(num);
+    
+    return answer.join(" + ");
+    
 }
