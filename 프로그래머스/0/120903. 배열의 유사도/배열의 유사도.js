@@ -1,4 +1,5 @@
 function solution(s1, s2) {
+    /*
     let answer = 0;
     
     for(let x of s1) {
@@ -8,4 +9,9 @@ function solution(s1, s2) {
     }
     
     return answer;
+    */
+    
+    let answer = s1.filter(x => s2.includes(x));
+    
+    return answer.length;
 }
