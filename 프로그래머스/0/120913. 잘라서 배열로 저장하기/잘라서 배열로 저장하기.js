@@ -1,4 +1,5 @@
 function solution(my_str, n) {
+    /*
     let answer = [];
     
     while(my_str.length !== 0) {
@@ -7,4 +8,7 @@ function solution(my_str, n) {
     }
     
     return answer;
+    */
+    
+    return my_str.match(new RegExp(`.{1,${n}}`, "g"));
 }
