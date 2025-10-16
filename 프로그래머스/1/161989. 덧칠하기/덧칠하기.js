@@ -1,4 +1,17 @@
 function solution(n, m, section) {
+    var answer = 0;
+    var painted = 0;
+    
+    for(var s of section) {
+        if(painted < s) {
+            answer++;
+            painted = s+m-1;
+        }
+    }
+    
+    return answer;
+    
+    /*
     let answer = 1;
     let last = section[0] + m - 1;
     
@@ -10,6 +23,7 @@ function solution(n, m, section) {
     }
     
     return answer;
+    */
     
     /*
     let arr = new Array(n).fill(1);
