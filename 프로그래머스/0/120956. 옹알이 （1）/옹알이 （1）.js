@@ -1,4 +1,5 @@
 function solution(babbling) {
+    /*
     let can = ["aya", "ye", "woo", "ma"];
     let answer = 0;
     
@@ -13,6 +14,16 @@ function solution(babbling) {
         }
         if(str.length === 0) answer++;
     }
+    
+    return answer;
+    */
+    
+    let answer = 0;
+    const reg = /^(aya|ye|woo|ma)+$/;
+    
+    babbling.forEach(word => {
+        if(reg.test(word)) answer++;
+    })
     
     return answer;
 }
