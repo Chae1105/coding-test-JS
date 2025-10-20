@@ -1,4 +1,5 @@
 function solution(myString) {
+    /*
     let answer = "";
     
     for(let s of myString) {
@@ -7,4 +8,7 @@ function solution(myString) {
     }
     
     return answer;
+    */
+    
+    return myString.replace(/[a-k]/g, "l");
 }
