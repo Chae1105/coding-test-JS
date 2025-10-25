@@ -1,4 +1,5 @@
 function solution(strArr) {
+    /*
     const obj = {};
     let answer = 0;
     
@@ -11,4 +12,14 @@ function solution(strArr) {
     }
     
     return answer;
+    */
+    
+    const counter = new Map();
+    
+    for(let str of strArr) {
+        counter.set(str.length, (counter.get(str.length) || 0) + 1);
+
+    }
+
+    return Math.max(...counter.values());
 }
