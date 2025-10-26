@@ -1,4 +1,5 @@
 function solution(arr) {
+    /*
     const answer = [];
     
     for(let n of arr) {
@@ -6,4 +7,7 @@ function solution(arr) {
     }
     
     return answer;
+    */
+    
+    return arr.map(n => Array(n).fill(n)).flat();
 }
