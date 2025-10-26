@@ -9,5 +9,7 @@ function solution(arr) {
     return answer;
     */
     
-    return arr.map(n => Array(n).fill(n)).flat();
+    //return arr.map(n => Array(n).fill(n)).flat();
+    
+    return arr.reduce((list, n) => [...list, ...Array(n).fill(n)], []);
 }
