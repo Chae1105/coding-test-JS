@@ -1,5 +1,6 @@
 function solution(arr)
 {
+    /*
     const answer = [];
     
     for(let i = 0; i < arr.length; i++) {
@@ -8,4 +9,7 @@ function solution(arr)
     }
     
     return answer;
+    */
+    
+    return arr.filter((num, idx) => num !== arr[idx + 1]);
 }
