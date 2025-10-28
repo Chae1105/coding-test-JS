@@ -1,6 +1,7 @@
 function solution(a, b) {
     if(a === b) return a;
     
+    /*
     const n1 = Math.min(a, b);
     const n2 = Math.max(a, b);
     let answer = 0;
@@ -10,4 +11,7 @@ function solution(a, b) {
     }
     
     return answer;
+    */
+    
+    return ((a+b) * (Math.abs(a-b) + 1)) / 2; //가우스..
 }
