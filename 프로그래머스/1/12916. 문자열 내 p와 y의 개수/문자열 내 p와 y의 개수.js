@@ -1,4 +1,5 @@
 function solution(s){
+    /*
     let p = 0;
     let y = 0;
     
@@ -8,4 +9,7 @@ function solution(s){
     }
     
     return p === 0 && y === 0 ? true : (p === y ? true : false);
+    */
+    
+    return s.toLowerCase().split("p").length === s.toLowerCase().split("y").length;
 }
