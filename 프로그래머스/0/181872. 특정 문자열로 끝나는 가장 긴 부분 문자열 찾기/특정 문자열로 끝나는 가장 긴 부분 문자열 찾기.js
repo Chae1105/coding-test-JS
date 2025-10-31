@@ -1,4 +1,5 @@
 function solution(myString, pat) {
+    /*
     let end = 0;
     
     for(let i = 0; i <= myString.length - pat.length; i++) {
@@ -6,4 +7,7 @@ function solution(myString, pat) {
     }
     
     return myString.slice(0, end);
+    */
+    
+    return myString.substring(0, myString.lastIndexOf(pat) + pat.length);
 }
