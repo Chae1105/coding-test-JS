@@ -1,4 +1,5 @@
 function solution(num_list) {
+    /*
     let answer = 0;
     for(let n of num_list) {
         for(let i = 1; i < 6; i++) {
@@ -10,4 +11,7 @@ function solution(num_list) {
     }
     
     return answer;
+    */
+    
+    return num_list.map(num => num.toString(2).length - 1).reduce((sum, n) => sum += n);
 }
